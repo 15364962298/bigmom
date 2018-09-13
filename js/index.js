@@ -16,6 +16,7 @@ window.onload=function(){
     let points=document.querySelectorAll('.banner .point li')
     let btn_lefts=document.querySelector('.banner .btn_left')
     let btn_rights=document.querySelector('.banner .btn_right')
+    console.log(picture_box);
     let flag=true;
     console.log(banner,banner_box,img_box,picture_box)
     let num=0;
@@ -67,6 +68,29 @@ window.onload=function(){
             points[j].classList.add('hot')
         }
     })
+//    鼠标移动事件
+    banner.onmousemove=function(e){
+        let x=e.offsetX
+        let y=e.offsetY
+        let top=(710-y)/5
+        let left=(1120-x)/5
+        if(top>150){
+            top=150
+        }
+        if(left>150){
+            left=150
+        }
+        if(top==0){
+            top=0
+        }
+        if(left==0){
+            left=0
+        }
+        console.log(x,y)
+        picture_box.forEach(function(val,index){
+            val.style=`top:${top}px;left:${left}px;`
+        })
+    }
 
 
 

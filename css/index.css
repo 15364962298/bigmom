@@ -111,6 +111,7 @@ img{
     width:100%;
     height: 710px;
     transition:all 1s;
+    cursor: pointer;
 }
 .banner .point{
     width:160px;
@@ -211,7 +212,9 @@ img{
     background: url(../img/lunbo1.jpg) no-repeat center;
 }
 .banner_box:first-child .img_box{
-    background: url(../img/people.png) no-repeat center;
+    background-image: url(../img/people.png) ;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 /*2*/
 .banner_box:nth-child(2){
@@ -222,7 +225,9 @@ img{
     background: url(../img/lunbo4.jpg) no-repeat center;
 }
 .banner_box:nth-child(2) .img_box{
-    background: url(../img/yanjing.png) no-repeat center;
+    background-image: url(../img/yanjing.png) ;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 /*3*/
@@ -234,7 +239,9 @@ img{
     background: url(../img/lunbo1.jpg) no-repeat center;
 }
 .banner_box:nth-child(3) .img_box{
-    background: url(../img/baizi.png) no-repeat center;
+    background-image: url(../img/baizi.png) ;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 /*4*/
 .banner_box:nth-child(4){
@@ -245,7 +252,9 @@ img{
     background: url(../img/lunbo3.png) no-repeat center;
 }
 .banner_box:nth-child(4) .img_box{
-    background: url(../img/shuye.png) no-repeat center;
+    background-image: url(../img/shuye.png) ;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 /*5*/
 /*4*/
@@ -257,7 +266,9 @@ img{
     background: url(../img/lunbo3.png) no-repeat center;
 }
 .banner_box:nth-child(5) .img_box{
-    background: url(../img/tui.png) no-repeat center;
+    background-image: url(../img/tui.png) ;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 /*banner结束*/
 /*成交数额开始*/
