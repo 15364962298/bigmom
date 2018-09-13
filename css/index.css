@@ -1,0 +1,781 @@
+*{
+    margin:0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+    color:#fff;
+}
+img{
+    width:100%;
+    height: 100%;
+}
+.top_fixed{
+    width: 100%;
+    height: 80px;
+    background: #09122b;
+    background: url(../img/top_fixed.png) no-repeat center;
+    color: #fff;
+    border-bottom:1px solid blue;
+    position:fixed;
+    top:0;
+    z-index:15;
+}
+.top_fixed .clearfix{
+    width: 1140px;
+    margin: 0 auto;
+}
+.top_fixed .logo{
+    display: block;
+    float: left;
+    width:145px;
+    height: 50px;
+    margin-right: 148px;
+    margin-top: 15px;
+}
+.top_fixed .logo_img{
+    width:50px;
+    height: 50px;
+    float: left;
+}
+.top_fixed .logo_text{
+    width:94px;
+    height: 50px;
+    float: left;
+}
+.top_fixed .top_nav{
+    float: left;
+    line-height: 80px;
+}
+.top_fixed .top_nav li{
+    height: 79px;
+    float: left;
+    padding: 0 19px;
+    text-align:center;
+
+}
+.top_fixed .top_nav li .js_nav{
+    width: 1300px;
+    height:0;
+    background: rgba(9,18,44,0.8);
+    position: absolute;
+    top:80px;
+    left:0;
+    transition: all .2s;
+    font-size:20px;
+    text-align: center;
+    line-height: 300px;
+    overflow: hidden;
+}
+.top_fixed .top_nav li a{
+    font-size:14px;
+}
+.top_fixed .top_nav li:first-child{
+    border-bottom:1px solid red;
+}
+.top_fixed .top_nav li:first-child a{
+    color:red;
+}
+.top_fixed .top_nav li:hover a{
+    color:red;
+}
+.top_fixed .login{
+    margin: 20px 0;
+    float: right;
+}
+.top_fixed .login .login_con{
+    width:100%;
+    font-size:12px;
+}
+.top_fixed .login .login_box{
+    margin-right: 25px;
+    color: #fff;
+    border-radius: 20px;
+    border: 1px solid #fff;
+    min-width: 80px;
+    text-align: center;
+    height: 36px;
+    line-height: 36px;
+    cursor: pointer;
+}
+.top_fixed .login .login_box:hover{
+    color:red;
+    border-color:red;
+}
+/*banner开始*/
+.banner{
+    margin-top:80px;
+    position: relative;
+    width:100%;
+    height: 710px;
+    transition:all 1s;
+}
+.banner .point{
+    width:160px;
+    height: 16px;
+    position: absolute;
+    bottom:80px;
+    left:0;
+    right:0;
+    margin-right: auto;
+    margin-left: auto;
+    z-index: 20;
+    display: flex;
+    justify-content: space-around;
+}
+.banner .point li{
+    width:16px;
+    height: 16px;
+    border:1px solid #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.banner .point .hot{
+    background: #fff;
+}
+.banner .btn_left{
+    width:45px;
+    height: 100px;
+    background: rgba(51,51,51,0.4);
+    position: absolute;
+    left:0;
+    top:0;
+    bottom:0;
+    margin-bottom: auto;
+    margin-top: auto;
+    z-index: 20;
+    line-height: 100px;
+    text-align: center;
+    color:rgba(255,255,255,0.5);
+    display: none;
+    cursor: pointer;
+}
+.banner:hover .btn_left{
+    display: block;
+    transition:all 1s;
+}
+.banner .btn_left i{
+    font-size: 40px;
+    font-weight: 200;
+}
+.banner .btn_right{
+    width:45px;
+    height: 100px;
+    background: rgba(51,51,51,0.4);
+    position: absolute;
+    right:0;
+    top:0;
+    bottom:0;
+    margin-bottom: auto;
+    margin-top: auto;
+    z-index: 20;
+    line-height: 100px;
+    text-align: center;
+    color:rgba(255,255,255,0.5);
+    display: none;
+    cursor: pointer;
+}
+.banner:hover .btn_right{
+    display: block;
+    transition:all 1s;
+}
+.banner .btn_right i{
+    font-size: 40px;
+    font-weight: 200;
+}
+/*1*/
+.banner_box{
+    position: relative;
+    width:100%;
+    height: 710px;
+}
+.banner_box .img_box{
+    height: 710px;
+    width: 1120px;
+    margin: 0 auto;
+}
+.banner_box .picture{
+    width:520px;
+    height: 210px;
+    position: absolute;
+    top:100px;
+    left:80px;
+}
+/*1*/
+.banner_box:first-child{
+    position: absolute;
+    top:0;
+    left:0;
+    background: url(../img/lunbo1.jpg) no-repeat center;
+}
+.banner_box:first-child .img_box{
+    background: url(../img/people.png) no-repeat center;
+}
+/*2*/
+.banner_box:nth-child(2){
+    position: absolute;
+    top:0;
+    left:0;
+    z-index:5;
+    background: url(../img/lunbo4.jpg) no-repeat center;
+}
+.banner_box:nth-child(2) .img_box{
+    background: url(../img/yanjing.png) no-repeat center;
+}
+
+/*3*/
+.banner_box:nth-child(3){
+    position: absolute;
+    top:0;
+    left:0;
+    z-index:4;
+    background: url(../img/lunbo1.jpg) no-repeat center;
+}
+.banner_box:nth-child(3) .img_box{
+    background: url(../img/baizi.png) no-repeat center;
+}
+/*4*/
+.banner_box:nth-child(4){
+    position: absolute;
+    top:0;
+    left:0;
+    z-index:3;
+    background: url(../img/lunbo3.png) no-repeat center;
+}
+.banner_box:nth-child(4) .img_box{
+    background: url(../img/shuye.png) no-repeat center;
+}
+/*5*/
+/*4*/
+.banner_box:nth-child(5){
+    position: absolute;
+    top:0;
+    left:0;
+    z-index:3;
+    background: url(../img/lunbo3.png) no-repeat center;
+}
+.banner_box:nth-child(5) .img_box{
+    background: url(../img/tui.png) no-repeat center;
+}
+/*banner结束*/
+/*成交数额开始*/
+.number{
+    width:100%;
+    height: 120px;
+    background-color: #fff;
+}
+.number .num-box{
+    width:1140px;
+    height: 100%;
+    margin:0 auto;
+    background: #fff;
+}
+.number .num-box .data_cell{
+    box-sizing:border-box;
+    width:25%;
+    padding:27px 0 27px 25px;
+    float: left;
+    position: relative;
+}
+.number .num-box .data_cell:after{
+    content:"";
+    clear:both;
+    display: block;
+    width:1px;
+    height: 50px;
+    background: #ccc;
+    position: absolute;
+    top:40px;
+    right:0;
+}
+.number .num-box .data_cell:last-child:after{
+    width:0;
+}
+.number .num-box .data_cell .value{
+    color:#5A2DFF;
+    line-height: 42px;
+}
+.number .num-box .data_cell .value .num{
+    font-size:32px;
+}
+.number .num-box .data_cell .value .unit{
+    font-size:16px;
+}
+.number .num-box .data_cell p{
+    font-size:12px;
+    color:#999999;
+    line-height: 18px;
+}
+/*成交数额结束*/
+/*优势开始*/
+.advantage{
+    width:100%;
+    background-color: #09122b;
+    padding-bottom: 170px;
+}
+.advantage .adv_content{
+    width:890px;
+    height: 616px;
+    margin:0 auto;
+}
+.advantage .adv_content .title{
+    text-align: center;
+    padding: 80px 0 60px;
+    font-size: 28px;
+    color: #fff;
+    line-height: 50px;
+}
+.advantage .adv_content .adv_lunbo{
+    width:100%;
+    height: 426px;
+    position: relative;
+}
+.advantage .adv_content .adv_lunbo .title_text{
+    position: absolute;
+    top:40px;
+    left:30px;
+    height:66px;
+}
+.advantage .adv_content .adv_lunbo .title_text .title_t_b{
+    width: 70px;
+    height: 3px;
+    border-radius: 99px;
+    background-color: #5a2dff;
+    margin-bottom: 30px;
+}
+.advantage .adv_content .adv_lunbo .title_text h2{
+    font-size: 22px;
+    line-height: 1.5;
+    color:#fff;
+    font-weight:400;
+}
+.advantage .adv_content .adv_lunbo .jiesao{
+    font-size: 12px;
+    line-height: 2;
+    color:#fff;
+    font-weight:400;
+    position: absolute;
+    top:220px;
+    left:30px;
+}
+.advantage .adv_content .adv_lunbo .btn{
+    display: block;
+    border-radius: 19px;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    background-color: #5a2dff;
+    -webkit-box-shadow: 0 2px 10px 0 rgba(29,30,34,.1);
+    box-shadow: 0 2px 10px 0 rgba(29,30,34,.1);
+    width: 209px;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 38px;
+    position: absolute;
+    bottom: 60px;
+    left: 38px;
+}
+.advantage .adv_content .adv_lunbo .btn:hover{
+    animation:color 1s linear 1 forwards;
+}
+@keyframes color{
+    from{
+        background: #5a2dff;
+    }
+    to{
+        background:red;
+    }
+}
+/*优势结束*/
+/*营销平台开始*/
+.digood{
+    color: #333;
+    background: #fff;
+}
+.digood:after{
+    content:"";
+    display: block;
+    clear: both;
+}
+.digood .digood_box{
+    width:1140px;
+    height: 100%;
+    margin:0 auto;
+}
+.digood .digood_box .title{
+    text-align: center;
+    padding: 80px 0 60px;
+    font-size: 28px;
+}
+.digood .digood_box .list .list_each{
+    width: 370px;
+    padding-bottom: 20px;
+    border-radius: 4px;
+    box-shadow: 2px 2px 20px 0 rgba(0,0,0,.1);
+    text-align: center;
+    overflow: hidden;
+    font-size: 12px;
+    float: left;
+    margin-right: 14px;
+    margin-bottom: 17px;
+}
+.digood .digood_box .list .list_each:nth-child(3n){
+    margin-right: 0;
+}
+.digood .digood_box .list .list_each .each_all{
+    display: block;
+    width:100%;
+    height: 100%;
+}
+.digood .digood_box .list .list_each .each_all .icons{
+    height: 310px;
+    margin-bottom: 24px;
+    vertical-align: middle;
+    position: relative;
+    overflow: hidden;
+}
+.digood .digood_box .list .list_each .each_all .icons .img_box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle,#0e1833,#283968);
+    opacity: .6;
+}
+.digood .digood_box .list .list_each .each_all .icons .icon_hover{
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    top: -22px;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    /*opacity: 0;*/
+}
+.digood .digood_box .list .list_each .each_all .icons .icon_hover .dot{
+    float: left;
+    width: 123px;
+    height: 123px;
+    background: #f60;
+    border-radius: 50%;
+    transform: scale(0.6);
+    transition: transform .5s,-webkit-transform .5s;
+    opacity: 0;
+}
+.digood .digood_box .list .list_each .each_all .icons .icon_hover:hover .dot{
+    background: #ff6700;
+    transform: scale(1.5);
+    opacity: 1;
+}
+.digood .digood_box .list .each_all .info{
+    text-align: center;
+    padding: 0 25px;
+    font-size: 12px;
+}
+.digood .digood_box .list .each_all .info .name{
+    font-size: 22px;
+    line-height: 39px;
+    color:#333;
+}
+.digood .digood_box .list .each_all .info .intro{
+    line-height: 1.8;
+    margin: 20px 0;
+    color: #666;
+}
+.digood .digood_box .list .each_all .button{
+    width: 209px;
+    height: 39px;
+    line-height: 39px;
+    text-align: center;
+    font-size: 16px;
+    color: #5a2dff;
+    border: 1px solid #5A2CFF;
+    border-radius: 20px;
+    margin:0 auto;
+}
+.digood .digood_box .list .each_all:hover .name{
+    color:#ff6700;
+}
+.digood .digood_box .list .each_all .button:hover{
+    color:#ff6700;
+    border-color:#ff6700;
+}
+/*营销平台结束*/
+/*真实案例开始*/
+.example{
+    background-color: #0e1833;
+    text-align: center;
+    padding-bottom: 90px;
+}
+.example .exam_box{
+    width: 1140px;
+    margin: 0 auto;
+}
+.example .exam_box .title{
+    text-align: center;
+    padding: 80px 0 60px;
+    font-size: 28px;
+    color: #fff;
+}
+.example .exam_box .list .list_one{
+    position: relative;
+    width: 940px;
+    height: 476px;
+    margin:0 auto 65px;
+    background: url(../img/beijingtu.png) no-repeat;
+    text-align: left;
+}
+.example .exam_box .list .list_one .content{
+    position: absolute;
+    left: 50px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    padding-bottom: 0;
+    height: 393px;
+    background: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 4px 4px 40px 0 rgba(0,0,0,.4);
+}
+.example .exam_box .list .list_one .content .con_left{
+    width:412px;
+    float: left;
+    height: 100%;
+}
+.example .exam_box .list .list_one .content .con_right{
+    width:478px;
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+    padding:30px 34px 0;
+    box-sizing: border-box;
+}
+.example .exam_box .list .list_one .content .con_right .id{
+    color: #5a2dff;
+    font-size: 22px;
+    text-align: right;
+    font-weight: 400;
+    line-height: 39px;
+}
+.example .exam_box .list .list_one .content .con_right .text_box{
+    border-bottom: 1px solid #eee;
+    margin-top: 16px;
+    padding-bottom: 22px;
+    color: #666;
+    font-size: 12px;
+    line-height: 21px;
+    text-align: justify;
+    text-shadow: 1px 1px 0 rgba(255,255,255,.8);
+}
+.example .exam_box .list .list_one .content .con_right .data{
+    width: 100%;
+    padding-top: 16px;
+    color:#333;
+}
+.example .exam_box .list .list_one .content .con_right .data:after{
+    content:"";
+    display: block;
+    clear: both;
+}
+.example .exam_box .list .list_one .content .con_right .data_cell{
+    width:50%;
+    text-align: center;
+    line-height: 1.5;
+    color: #333;
+    position: relative;
+    float: left;
+}
+.example .exam_box .list .list_one .content .con_right .data_cell:after{
+    content:"";
+    display: block;
+    clear: both;
+    width: 1px;
+    height: 46px;
+    background-color: #ccc;
+    position: absolute;
+    right:0;
+    top:10px;
+}
+.example .exam_box .list .list_one .content .con_right .data_cell:last-child:after{
+    width:0;
+}
+.example .exam_box .list .list_one .content .con_right .data_cell h3{
+    margin-bottom: 5px;
+    font-size: 22px;
+    color: #5a2dff;
+    font-weight: 400;
+}
+.example .exam_box .list .list_one .content .con_right .data_cell p{
+    font-size: 12px;
+    color: #999;
+    line-height: 1.5;
+}
+.example .exam_box .list .list_one .content .con_right .button{
+    margin-top: 30px;
+    width: 209px;
+    height: 39px;
+    line-height: 39px;
+    text-align: center;
+    font-size: 16px;
+    color: #5a2dff;
+    border: 1px solid #5A2CFF;
+    border-radius: 20px;
+    float: right;
+}
+.example .exam_box .list .list_one .content .con_right .button:hover{
+    color:#ff6700;
+   border-color: #ff6700;
+}
+/*真实案例结束*/
+/*底部地址开始*/
+footer{
+    width:100%;
+    background: #070e23;
+    height: 537px;
+    overflow: hidden;
+    position: relative;
+}
+footer .map{
+    width: 1140px;
+    margin: 100px auto 40px;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+footer .map:after{
+    content:"";
+    display: block;
+    clear: both;
+}
+footer .map .logo{
+    width: 20%;
+    float: left;
+}
+footer .map .logo img{
+    width: 110px;
+}
+footer .map .map_text{
+    float: left;
+    width: 60%;
+}
+footer .map .map_text dl{
+    font-size: 16px;
+    float: left;
+    width: 33%;
+    text-align: center;
+}
+footer .map .map_text dl dt{
+    opacity: .5;
+    margin-bottom: 16px;
+}
+footer .map .map_text dl dd{
+    line-height: 32px;
+}
+footer .map .map_text dl dd a:hover{
+    color:red;
+}
+footer .map .qr_code{
+    width: 176px;
+    text-align: center;
+    float: right;
+    font-size:14px;
+    line-height: 25px;
+}
+footer .map .qr_code img{
+    width: 92px;
+    margin:0 auto 10px;
+}
+footer .call_me{
+    width: 1140px;
+    margin: 0 auto;
+}
+footer .call_me .address{
+    padding: 10px;
+    text-align: left;
+    font-size: 12px;
+    line-height: 2.4;
+}
+footer .call_me .address .text1:after{
+    content:"";
+    display: block;
+    clear: both;
+}
+footer .call_me .address .link{
+    text-align: left;
+    font-size: 12px;
+    line-height: 2.4;
+    float: left;
+}
+footer .call_me .address .link a{
+    margin-right:20px;
+    color:#fff;
+    opacity: 0.5;
+}
+footer .call_me .address .link a:hover{
+    opacity: 1;
+}
+footer .call_me .address .copyright{
+    float: left;
+    margin-right:20px;
+}
+footer .call_me .address .copyright span{
+    color:#fff;
+    opacity: 0.5;
+}
+footer .call_me .address .copyright a{
+    color:#fff;
+    opacity: 0.5;
+    margin-left:20px;
+}
+footer .call_me .address .copyright a:hover{
+    opacity: 1;
+}
+footer .call_me .address .text2 a{
+    with:100%;
+    line-height: 2.4;
+    opacity: 0.5;
+}
+footer .call_me .address .text2 a:hover{
+    opacity: 1;
+}
+footer .call_me .address .text2 b{
+    margin: 0 8px;
+    font-weight: 400;
+    color: #DDD;
+}
+footer .call_me .small_img{
+    margin-top: 8px;
+}
+footer .call_me .small_img a{
+    display: block;
+    width:40px;
+    height: 42px;
+    opacity: 0.5;
+    margin-right:20px;
+    float: left;
+}
+footer .call_me .small_img a:hover{
+    opacity: 1;
+}
+/*底部地址结束*/
+
+
+/*音乐*/
+.audio_box{
+    width:100%;
+    height: 54px;
+    padding-left:50px;
+    margin:0 auto;
+    background: #fff;
+    opacity: 1;
+}
+
+
+
+
+

@@ -1,0 +1,381 @@
+@import url('base.css');
+body{
+    line-height: 1.8;
+}
+/*顶部固定导航开始*/
+.top_fixed{
+    width: 100%;
+    height: 80px;
+    background: #09122b;
+    background: url(../img/top_fixed.png) no-repeat center;
+    color: #fff;
+    border-bottom:1px solid blue;
+    position:fixed;
+    top:0;
+    z-index:1000;
+    overflow: hidden;
+}
+.top_fixed .clearfix{
+    width: 1140px;
+    margin: 0 auto;
+}
+.top_fixed .logo{
+    display: block;
+    float: left;
+    width:145px;
+    height: 50px;
+    margin-right: 148px;
+    margin-top: 15px;
+}
+.top_fixed .logo_img{
+    width:50px;
+    height: 50px;
+    float: left;
+}
+.top_fixed .logo_text{
+    width:94px;
+    height: 50px;
+    float: left;
+}
+.top_fixed .top_nav{
+    float: left;
+    line-height: 80px;
+}
+.top_fixed .top_nav li{
+    height: 79px;
+    float: left;
+    padding: 0 19px;
+    text-align:center;
+}
+.top_fixed .top_nav li a{
+    font-size:14px;
+}
+.top_fixed .top_nav li:last-child{
+    border-bottom:1px solid red;
+}
+.top_fixed .top_nav li:last-child a{
+    color:red;
+}
+.top_fixed .top_nav li:hover a{
+    color:red;
+}
+.top_fixed .login{
+    margin: 20px 0;
+    float: right;
+}
+.top_fixed .login .login_con{
+    width:100%;
+    font-size:12px;
+}
+.top_fixed .login .login_box{
+    margin-right: 25px;
+    color: #fff;
+    border-radius: 20px;
+    border: 1px solid #fff;
+    min-width: 80px;
+    text-align: center;
+    height: 36px;
+    line-height: 36px;
+    cursor: pointer;
+}
+.top_fixed .login .login_box:hover{
+    color:red;
+    border-color:red;
+}
+/*顶部固定导航结束*/
+
+/*关于我们内容开始*/
+.container{
+    background-color: #0e1833;
+    margin-top:80px;
+}
+/*banner开始*/
+.container .banner{
+    height: 400px;
+    background: url(../img/TB1MAXNSFXXXXbPapXXXXXXXXXX-1920-400.png) 50% 50%;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+}
+.container .banner .headline{
+    margin-top: 40px;
+    font-size: 60px;
+    font-weight: 700;
+}
+.container .banner .subtitle{
+    font-size: 30px;
+}
+/*banner结束*/
+/*关于阿里妈妈开始*/
+.container .about_ali{
+    height: 345px;
+    position: relative;
+}
+.container .about_ali .ali_content{
+    position: absolute;
+    top: -85px;
+    left: 50%;
+    width: 816px;
+    margin-left: -408px;
+    background: url(../img/TB1brzrSFXXXXbFXFXXXXXXXXXX-815-358.png) no-repeat #fff;
+    height: 360px;
+    border-radius: 4px;
+    box-shadow: 2px 2px 20px 0 rgba(0,0,0,.1);
+}
+.container .about_ali .ali_content .picture{
+    position: absolute;
+    left: 52px;
+    top: -52px;
+    width: 250px;
+    height: 360px;
+    box-shadow: 2px 2px 20px 0 rgba(0,0,0,.3);
+}
+.container .about_ali .ali_content .text_right{
+    position: absolute;
+    top: 40px;
+    right: 52px;
+    width: 410px;
+    line-height: 28px;
+}
+.container .about_ali .ali_content .text_right .title_mom{
+    margin-bottom: 90px;
+    font-size:22px;
+}
+.container .about_ali .ali_content .text_right .detail h3{
+    font-size: 14px;
+    font-weight: 700;
+}
+.container .about_ali .ali_content .text_right .detail p{
+    font-size: 12px;
+}
+/*关于阿里妈妈结束*/
+/*阿里里程开始*/
+.container .about_grow{
+    color: #fff;
+    overflow: hidden;
+    padding-bottom: 120px;
+}
+.container .about_grow .W1140{
+    width: 1140px;
+    margin: 0 auto;
+}
+.container .about_grow .W1140 .title_grow{
+    text-align: center;
+    padding: 80px 0 60px;
+    font-size: 28px;
+}
+.container .about_grow .W1140 .img_box{
+    width: 310px;
+    margin: 0 auto 60px;
+    text-align: center;
+    transition:all 5s linear;
+    animation:rotate 30s linear infinite forwards;
+}
+@keyframes rotate{
+    from{
+        transform:rotate(0);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+}
+.container .about_grow .W1140 .growth{
+    width: 32%;
+    margin: 0 auto;
+}
+.container .about_grow .W1140 .growth .part{
+    margin-bottom: 36px;
+}
+.container .about_grow .W1140 .growth .part .event{
+    position: relative;
+}
+.container .about_grow .W1140 .event .date{
+    padding-left: 38px;
+    color: #5A2CFF;
+    font-size: 22px;
+    position: relative;
+}
+.container .about_grow .W1140 .growth .part .event .date:before{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left: -5px;
+    bottom: 12px;
+    background-color: #5A2CFF;
+    border-radius: 50%;
+}
+.container .about_grow .W1140 .growth .part .first .date:before{
+    width: 15px;
+    height: 15px;
+    left: -7px;
+    -webkit-box-shadow: 0 0 0 11px #0e1833, 0 0 0 12px #5A2CFF;
+    box-shadow: 0 0 0 11px #0e1833, 0 0 0 12px #5A2CFF;
+}
+.container .about_grow .W1140 .growth .part .detail{
+    padding-left: 38px;
+    border-left: 1px solid #5A2CFF;
+    padding-bottom: 30px;
+}
+.container .about_grow .W1140 .growth .part .detail .event-intro{
+    position: relative;
+    font-size: 16px;
+}
+.container .about_grow .W1140 .growth .part .detail .event-intro:before{
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    left: -15px;
+    top: 12px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+.container .about_grow .W1140 .growth .part .last:after{
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    left: -2px;
+    bottom: 0;
+    background-color: #5A2CFF;
+    border-radius: 50%;
+}
+/*阿里里程结束*/
+/*关于我们内容结束*/
+
+/*底部地址开始*/
+footer{
+    width:100%;
+    background: #070e23;
+    height: 537px;
+    overflow: hidden;
+    position: relative;
+}
+footer .map{
+    width: 1140px;
+    margin: 100px auto 40px;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+footer .map:after{
+    content:"";
+    display: block;
+    clear: both;
+}
+footer .map .logo{
+    width: 20%;
+    float: left;
+}
+footer .map .logo img{
+    width: 110px;
+}
+footer .map .map_text{
+    float: left;
+    width: 60%;
+}
+footer .map .map_text dl{
+    font-size: 16px;
+    float: left;
+    width: 33%;
+    text-align: center;
+}
+footer .map .map_text dl dt{
+    opacity: .5;
+    margin-bottom: 16px;
+}
+footer .map .map_text dl dd{
+    line-height: 32px;
+}
+footer .map .map_text dl dd a:hover{
+    color:red;
+}
+footer .map .qr_code{
+    width: 176px;
+    text-align: center;
+    float: right;
+    font-size:14px;
+    line-height: 25px;
+}
+footer .map .qr_code img{
+    width: 92px;
+    margin:0 auto 10px;
+}
+footer .call_me{
+    width: 1140px;
+    margin: 0 auto;
+}
+footer .call_me .address{
+    padding: 10px;
+    text-align: left;
+    font-size: 12px;
+    line-height: 2.4;
+}
+footer .call_me .address .text1:after{
+    content:"";
+    display: block;
+    clear: both;
+}
+footer .call_me .address .link{
+    text-align: left;
+    font-size: 12px;
+    line-height: 2.4;
+    float: left;
+}
+footer .call_me .address .link a{
+    margin-right:20px;
+    color:#fff;
+    opacity: 0.5;
+}
+footer .call_me .address .link a:hover{
+    opacity: 1;
+}
+footer .call_me .address .copyright{
+    float: left;
+    margin-right:20px;
+}
+footer .call_me .address .copyright span{
+    color:#fff;
+    opacity: 0.5;
+}
+footer .call_me .address .copyright a{
+    color:#fff;
+    opacity: 0.5;
+    margin-left:20px;
+}
+footer .call_me .address .copyright a:hover{
+    opacity: 1;
+}
+footer .call_me .address .text2 a{
+    with:100%;
+    line-height: 2.4;
+    opacity: 0.5;
+}
+footer .call_me .address .text2 a:hover{
+    opacity: 1;
+}
+footer .call_me .address .text2 b{
+    margin: 0 8px;
+    font-weight: 400;
+    color: #DDD;
+}
+footer .call_me .small_img{
+    margin-top: 8px;
+}
+footer .call_me .small_img a{
+    display: block;
+    width:40px;
+    height: 42px;
+    opacity: 0.5;
+    margin-right:20px;
+    float: left;
+}
+footer .call_me .small_img a:hover{
+    opacity: 1;
+}
+/*底部地址结束*/
+
+
+
+

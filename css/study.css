@@ -1,0 +1,425 @@
+@import url('base.css');
+body{
+    line-height: 1.8;
+}
+/*顶部固定导航开始*/
+.top_fixed{
+    width: 100%;
+    height: 80px;
+    background: #09122b;
+    background: url(../img/top_fixed.png) no-repeat center;
+    color: #fff;
+    border-bottom:1px solid blue;
+    position:fixed;
+    top:0;
+    z-index:1000;
+    overflow: hidden;
+}
+.top_fixed .clearfix{
+    width: 1140px;
+    margin: 0 auto;
+}
+.top_fixed .logo{
+    display: block;
+    float: left;
+    width:145px;
+    height: 50px;
+    margin-right: 148px;
+    margin-top: 15px;
+}
+.top_fixed .logo_img{
+    width:50px;
+    height: 50px;
+    float: left;
+}
+.top_fixed .logo_text{
+    width:94px;
+    height: 50px;
+    float: left;
+}
+.top_fixed .top_nav{
+    float: left;
+    line-height: 80px;
+}
+.top_fixed .top_nav li{
+    height: 79px;
+    float: left;
+    padding: 0 19px;
+    text-align:center;
+}
+.top_fixed .top_nav li a{
+    font-size:14px;
+}
+.top_fixed .top_nav li:nth-child(5){
+    border-bottom:1px solid red;
+}
+.top_fixed .top_nav li:nth-child(5) a{
+    color:red;
+}
+.top_fixed .top_nav li:hover a{
+    color:red;
+}
+.top_fixed .login{
+    margin: 20px 0;
+    float: right;
+}
+.top_fixed .login .login_con{
+    width:100%;
+    font-size:12px;
+}
+.top_fixed .login .login_box{
+    margin-right: 25px;
+    color: #fff;
+    border-radius: 20px;
+    border: 1px solid #fff;
+    min-width: 80px;
+    text-align: center;
+    height: 36px;
+    line-height: 36px;
+    cursor: pointer;
+}
+.top_fixed .login .login_box:hover{
+    color:red;
+    border-color:red;
+}
+/*顶部固定导航结束*/
+
+/*中间所有内容开始*/
+.container{
+    width: 100%;
+    overflow: hidden;
+    background-color: #f4f4f4;
+}
+.container>.banner{
+    height: 400px;
+    overflow: hidden;
+    background: url(../img/TB12PYzSFXXXXcxXpXXXXXXXXXX-1920-400.png) 50% 50%;
+    text-align: center;
+    color: #fff;
+    margin-top:80px;
+}
+.container>.banner>.headline{
+    margin-top: 100px;
+    font-size: 60px;
+    font-weight: 700;
+}
+.container>.banner>.subtitle{
+    font-size: 30px;
+}
+.container>.myself{
+    margin-bottom:150px;
+    height: 310px;
+    background: linear-gradient(to right,#5a2cff,#e2485f);
+}
+.container>.myself>.w1140{
+    overflow: hidden;
+    width: 1140px;
+    margin: 0 auto;
+}
+.container>.myself>.w1140>.title{
+    display: block;
+    text-align: center;
+    margin: 80px 0 60px;
+    color: #fff;
+}
+.container>.myself>.w1140>.title>.headline{
+    display: block;
+    font-size: 28px;
+}
+.container>.myself>.w1140>.title>.subtitle{
+    display: block;
+    font-size: 16px;
+}
+.container>.myself>.w1140>.shuyuan_content>.list{
+    text-align: center;
+}
+/*.container>.myself>.w1140>.shuyuan_content>.list:before{*/
+    /*display: table;*/
+    /*content: "";*/
+/*}*/
+.container>.myself>.w1140>.shuyuan_content>.list>.item{
+    width: 23%;
+    height: 156px;
+    overflow: hidden;
+    margin-right: 2%;
+    position: relative;
+    float: left;
+    border-radius: 4px;
+    box-shadow: 2px 2px 20px 0 rgba(0,0,0,.1);
+    background: url(../img/TB1x8G6SFXXXXXQXXXXXXXXXXXX-104-86.jpg) no-repeat right bottom;
+    background-color: #fff;
+}
+.container>.myself>.w1140>.shuyuan_content>.list>.item:nth-child(2){
+    background: url(../img/TB1_YGqSVXXXXa3XFXXXXXXXXXX-114-82.png) no-repeat right bottom;
+    background-color: #fff;
+}
+.container>.myself>.w1140>.shuyuan_content>.list>.item:nth-child(3){
+    background: url(../img/TB1uLaBSFXXXXXjXVXXXXXXXXXX-113-86.jpg) no-repeat right bottom;
+    background-color: #fff;
+}
+.container>.myself>.w1140>.shuyuan_content>.list>.item:nth-child(4){
+    background: url(../img/TB12pKzSFXXXXaqXVXXXXXXXXXX-81-81.jpg) no-repeat right bottom;
+    background-color: #fff;
+}
+.container>.myself>.w1140>.shuyuan_content>.list>.item .knowledge{
+    display: block;
+    position: relative;
+}
+.container>.myself>.w1140>.shuyuan_content>.list>.item .knowledge .cate_name{
+    font-size: 18px;
+    color: #333;
+    display: block;
+    line-height: 36px;
+    margin: 20px 0;
+    text-align: center;
+}
+.container>.myself>.w1140>.shuyuan_content>.list>.item .knowledge .feature{
+    color: #666;
+    display: block;
+    font-size: 12px;
+}
+.container>.myself>.w1140>.shuyuan_content>.list>.item:last-child{
+    margin-right:0;
+}
+.container .kefu{
+    width:100%;
+}
+.container .kefu .w1140 {
+    width: 1140px;
+    margin: 0 auto;
+}
+.container .kefu .w1140 .title{
+    text-align: center;
+    margin: 80px 0 60px;
+    color: #fff;
+}
+.container .kefu .w1140 .title .headline{
+    font-size: 28px;
+    color: #333;
+    display: block;
+}
+.container .kefu .w1140 .title .subtitle {
+    font-size: 16px;
+    color: #666;
+    display: block;
+}
+.container .kefu .w1140 .clearfix{
+    margin-top: 60px;
+    height: 320px;
+}
+.container .kefu .w1140 .clearfix .item{
+    width: 32%;
+    height: 320px;
+    position: relative;
+    margin-right: 2%;
+    float: left;
+    border-radius: 4px;
+    box-shadow: 2px 2px 20px 0 rgba(0,0,0,.1);
+    background: #fff;
+}
+.container .kefu .w1140 .clearfix .item:last-child{
+    margin-right:0;
+}
+.container .kefu .w1140 .clearfix .item dl{
+    margin-top: 70px;
+}
+.container .kefu .w1140 .clearfix .item dl .icon{
+    color: #fff;
+    width: 86px;
+    height: 86px;
+    line-height: 86px;
+    text-align: center;
+    border-radius: 50%;
+    background: #0b1d3f;
+    position: absolute;
+    left: 50%;
+    top: -43px;
+    margin-left: -43px;
+    box-shadow: 2px 2px 20px 0 rgba(0,0,0,.1);
+}
+.container .kefu .w1140 .clearfix .item dl .icon i{
+    font-size:34px;
+}
+.container .kefu .w1140 .clearfix .item dl dt{
+    color: #333;
+    font-size: 18px;
+    line-height: 36px;
+    margin: 20px 0;
+    text-align: center;
+}
+.container .kefu .w1140 .clearfix .item dl dd{
+    padding-left: 30px;
+    padding-right: 30px;
+    max-width: 80%;
+    margin-bottom: 20px;
+    line-height: 32px;
+    font-size: 16px;
+    position: relative;
+}
+.container .kefu .w1140 .clearfix .item dl dd a{
+    isplay: block;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #666;
+}
+.container .kefu .w1140 .clearfix .item dl dd a:hover{
+    color: #ff6700;
+}
+.container .kefu .w1140 .clearfix .item dl dd a i{
+    position: absolute;
+    right: 12px;
+    bottom: 0;
+    font-size:12px;
+}
+.container .kefu .w1140 .more{
+    color: #5A2CFF;
+    font-size: 16px;
+    margin: 36px 0 50px;
+    float: right;
+    display: inline-block;
+}
+.container .kefu .w1140 .more:hover{
+    color:#ff6700;
+}
+.container .kefu .w1140 .more:hover i{
+    color:#ff6700;
+}
+.container .kefu .w1140 .more i{
+    color: #5A2CFF;
+    font-size: 12px;
+}
+/*中间所有内容结束*/
+
+/*底部地址开始*/
+footer{
+    width:100%;
+    background: #070e23;
+    height: 537px;
+    overflow: hidden;
+    position: relative;
+}
+footer .map{
+    width: 1140px;
+    margin: 100px auto 40px;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+footer .map:after{
+    content:"";
+    display: block;
+    clear: both;
+}
+footer .map .logo{
+    width: 20%;
+    float: left;
+}
+footer .map .logo img{
+    width: 110px;
+}
+footer .map .map_text{
+    float: left;
+    width: 60%;
+}
+footer .map .map_text dl{
+    font-size: 16px;
+    float: left;
+    width: 33%;
+    text-align: center;
+}
+footer .map .map_text dl dt{
+    opacity: .5;
+    margin-bottom: 16px;
+}
+footer .map .map_text dl dd{
+    line-height: 32px;
+}
+footer .map .map_text dl dd a:hover{
+    color:red;
+}
+footer .map .qr_code{
+    width: 176px;
+    text-align: center;
+    float: right;
+    font-size:14px;
+    line-height: 25px;
+}
+footer .map .qr_code img{
+    width: 92px;
+    margin:0 auto 10px;
+}
+footer .call_me{
+    width: 1140px;
+    margin: 0 auto;
+}
+footer .call_me .address{
+    padding: 10px;
+    text-align: left;
+    font-size: 12px;
+    line-height: 2.4;
+}
+footer .call_me .address .text1:after{
+    content:"";
+    display: block;
+    clear: both;
+}
+footer .call_me .address .link{
+    text-align: left;
+    font-size: 12px;
+    line-height: 2.4;
+    float: left;
+}
+footer .call_me .address .link a{
+    margin-right:20px;
+    color:#fff;
+    opacity: 0.5;
+}
+footer .call_me .address .link a:hover{
+    opacity: 1;
+}
+footer .call_me .address .copyright{
+    float: left;
+    margin-right:20px;
+}
+footer .call_me .address .copyright span{
+    color:#fff;
+    opacity: 0.5;
+}
+footer .call_me .address .copyright a{
+    color:#fff;
+    opacity: 0.5;
+    margin-left:20px;
+}
+footer .call_me .address .copyright a:hover{
+    opacity: 1;
+}
+footer .call_me .address .text2 a{
+    with:100%;
+    line-height: 2.4;
+    opacity: 0.5;
+}
+footer .call_me .address .text2 a:hover{
+    opacity: 1;
+}
+footer .call_me .address .text2 b{
+    margin: 0 8px;
+    font-weight: 400;
+    color: #DDD;
+}
+footer .call_me .small_img{
+    margin-top: 8px;
+}
+footer .call_me .small_img a{
+    display: block;
+    width:40px;
+    height: 42px;
+    opacity: 0.5;
+    margin-right:20px;
+    float: left;
+}
+footer .call_me .small_img a:hover{
+    opacity: 1;
+}
+/*底部地址结束*/
